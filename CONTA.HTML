@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta de Amor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: #fbd1ff;
+            margin: 5%;
+            padding: 10%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .carta {
+            display: none;
+            background-color: #f3d7e2;
+            padding: 20px;
+            width: 60%;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .carta p {
+            color: #555;
+            font-size: 18px;
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        .botao {
+            padding: 20px 30px;
+            font-size: 20px;
+            background-color: #ff69b4;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+
+        .botao:hover {
+            background-color: #ff3385;
+        }
+    </style>
+</head>
+<body>
+    <img src="imagens/img11.jpeg" alt="Imagem 11">
+    
+    <a href="#" class="botao" id="abrirCarta">Abrir Carta</a>
+
+    <div class="carta" id="carta">
+        <p><strong>Minha Mulher Bianca,</strong></p>
+
+        <p>Há algo mágico em escrever para você. Cada palavra que coloco no papel carrega um pedaço de mim e do meu coração, e é com esse coração repleto de sentimentos que te escrevo agora.</p>
+
+        <p>Desde que você entrou na minha vida, o mundo ao meu redor ganhou mais cor, mais significado, mais alegria. A sua presença é como uma melodia suave que embala os meus dias, e a cada momento ao seu lado, eu me sinto mais completo. Você tem o poder de transformar os meus pensamentos mais simples em sonhos lindos e cheios de esperança.</p>
+
+        <p>Eu me apaixono por você todos os dias, não apenas pelos grandes gestos, mas também pelos pequenos detalhes que tornam você única. O brilho no seu olhar, o sorriso que me acolhe em cada despedida e a maneira como a sua voz traz paz ao meu coração. Cada um desses detalhes faz meu amor por você crescer ainda mais.</p>
+
+        <p>No silêncio das nossas conversas, no abraço apertado, nas risadas compartilhadas, eu encontrei um amor que eu nunca soube que existia. Um amor que é mais profundo do que palavras podem expressar, mais forte do que qualquer desafio que possamos enfrentar juntos.</p>
+
+        <p>Quero agradecer por cada momento, por cada instante em que você me mostrou o que é a verdadeira felicidade. Quero construir ao seu lado muitos outros capítulos dessa história maravilhosa que é a nossa.</p>
+
+        <p>Eu te amo mais do que posso dizer, mais do que as palavras aqui podem expressar. E prometo continuar ao seu lado, amando você com todo o meu ser, por todos os dias que a vida nos proporcionar.</p>
+
+        <p><em>Com todo o meu amor,</em><br>Leandro</p>
+    </div>
+
+    <script>
+        const botao = document.getElementById('abrirCarta');
+        const carta = document.getElementById('carta');
+
+        botao.addEventListener('click', () => {
+            carta.style.display = 'block';
+            botao.style.display = 'none'; // Esconde o botão após clicar
+        });
+    </script>
+
+</body>
+</html>
